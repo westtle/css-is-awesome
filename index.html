@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="westtle">
+	<meta name="description" content="CSS IS AWESOME">
+	<meta name="keywords" content="html, css, css is awesome">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS is Awesome</title>
+
+	<link rel="icon" type="image/x-icon" href="#">
+	<style type="text/css">
+		*, *::before, *::after {
+			box-sizing: border-box;
+		}
+
+		body { /* Left & right spacing is left & right from default body margin + 12px */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 91vh;
+			margin-block: 4.5vh;
+			padding: 0.75rem;
+		}
+
+		#css-is-awesome > h1 {
+			color: rgba(0, 0, 0, 0.9);
+			border: 0.25rem solid rgba(0, 0, 0, 0.7);
+			width: 13.125rem;
+			margin: 0;
+			padding: 0 0.25rem;
+			font-family: arial;
+			font-size: 3.75rem;
+			font-weight: 400;
+		}
+		
+		/* Notice / Link */
+
+		#notice {
+			width: 80%;
+		    padding: 0 0.4375rem;
+		    font-size: 0.688rem;
+		    text-align: center;
+		    line-height: 1.1;
+		    word-wrap: break-word;
+
+		    position: absolute;
+		    inset-inline-start: 50%;
+		    inset-block-end: 0.75rem;
+		    transform: translateX(-50%);
+		}
+
+		/* Media Query */
+
+		/* Font Size */
+		@media (max-width: 30rem) { /* 480px */
+		    html {
+		        font-size: calc(1rem - 10%);
+		    }
+		}
+		/* -------- */
+	</style>
+</head>
+<body>
+	<main>
+		<div id="css-is-awesome">
+			<h1>CSS IS <b>AWESOME</b></h1>
+		</div>
+		<div id="notice">
+			Repository: <a href="https://github.com/westtle/css-is-awesome" target="_blank">https://github.com/westtle/css-is-awesome</a>
+		</div>
+	</main>
+</body>
+</html>
